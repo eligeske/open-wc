@@ -1,21 +1,28 @@
 # Community >> Base Libraries ||20
 
-You can write web components using just the basic web component APIs. This can be a great choice when you're looking to keep dependencies low. But generally, we recommend using lightweight libraries to help improve the developer experience and reduce boilerplate.
+## Resources
 
-We recommend [lit-html](https://www.npmjs.com/package/lit-html) with the [lit-element](https://www.npmjs.com/package/lit-element) base class as a general-purpose library for building web components. `lit-html` is feature complete, extremely lightweight and offers a great development experience. Check out the [lit-html page](/developing/lit-html.html) for code examples and more information.
+- [All the ways to build a web component](https://webcomponents.dev/blog/all-the-ways-to-make-a-web-component/) a comparison of different web component libraries.
 
-In the code snippets throughout our documentation, we use `lit-html` and `lit-element`, but our recommendations and tools are not specific to them. You should be able to use them with any web component library that follows browser standards. If you do run into issues or have any questions, let us know about it!
+- [awesome lit-html](https://github.com/web-padawan/awesome-lit-html) a collection of resources related to lit-html, lit-element and general web components.
 
-### Alternative libraries
+## Base libraries
 
-Besides `lit-html`, there are other great options available:
+Our generator sets you up with a component built with [lit-html](http://lit-html.polymer-project.org/) and [LitElement](https://lit-element.polymer-project.org/) as base libraries. This is our standard recommendation and a solid starting point for most projects, but it's not the only way to build web components.
 
-- [haunted](https://www.npmjs.com/package/haunted) functional-style web components, with react-like hooks
-- [hybrids](https://www.npmjs.com/package/hybrids) another functional web component library
-- [SkateJS](https://skatejs.netlify.com/) wraps libraries like react, preact or lit-html in a web component
-- [slim.js](https://slimjs.com/) declarative web components
-- [stencil](https://stenciljs.com/) web component with typescript and JSX (requires a build step)
+Below is a listing of web component libraries which all take a different approach to building web component, filing different use cases. Try them out for yourself and pick what's right for your project.
 
-## Further reading
+A challenge with listing projects is that some might be abandoned over time. For this reason we sort the projects by weekly NPM downloads. This is a very rough metric, and should not be the only means of judging the quality of a project.
 
-See: [awesome lit-html](https://github.com/web-padawan/awesome-lit-html) for a great collection of resources.
+<ul>
+{% for lib in baseLibraries %}
+  <li>
+     <a href="{{ lib.url }}" target="_blank" rel="noopener noreferrer">{{ lib.name }}</a> ({{ lib.downloadsFormatted }} weekly downloads)
+     <p>{{ lib.description }}</p>
+  </li>
+{% endfor %}
+</ul>
+
+<!-- The data for this list is maintained in /docs/_data/baseLibraries.js -->
+
+> Note: want to add another base library to this list? Send us a pull request!

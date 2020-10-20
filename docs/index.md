@@ -13,11 +13,11 @@ reasons:
     },
     {
       header: Awesome Generators,
-      text: 'Get up and running quickly with opinionated generators, or add recommended tools to existing projects. Our comprehensive fleet of generators have got you covered',
+      text: 'Get up and running quickly with opinionated generators, or add recommended tools to existing projects. Our comprehensive set of generators have got you covered',
     },
     {
       header: Open Source Love,
-      text: 'Open Web Components is a community-effort, independent of any framework or company. We use mostly open-source tools and services.',
+      text: 'Open Web Components is a community-effort, independent of any framework or company. We are based on open-source tools and services.',
     },
   ]
 ---
