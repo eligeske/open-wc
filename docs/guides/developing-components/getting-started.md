@@ -28,6 +28,10 @@ Browsers have improved a lot over the past years. It's now possible to do web de
 
 Build tools can quickly add a lot of complexity to your code, and make your code reliant on a specific build setup. We think it's best to avoid them during development, or only add them for light transformations if you know what you're doing.
 
+## Modern Web
+
+We follow many of the development practices defined by [Modern Web](http://modern-web.dev/), our sister project. We recommend taking a look at their guides and documentation as well.
+
 ## Base libraries
 
 Our generator sets you up with a component built with [lit-html](http://lit-html.polymer-project.org/) and [LitElement](https://lit-element.polymer-project.org/) as base libraries. This is our standard recommendation and a solid starting point for most projects, but it's not the only way to build web components.

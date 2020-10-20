@@ -1,6 +1,6 @@
 # Guides ||10
 
-The goal of Open Web Components is to empower everyone with a powerful and battle-tested setup for sharing open source web components. We try to achieve this by giving a set of recommendations and defaults on how to facilitate your web component project. Our recommendations include: developing, linting, testing, tooling, demoing, publishing and automating.
+The goal of Open Web Components is to empower everyone with a powerful and battle-tested setup for sharing open-source web components. We try to achieve this by giving a set of recommendations and defaults on how to facilitate your web component project. Our recommendations covers things such as development, linting, testing and building for production.
 
 ## Quickstart
 
@@ -23,9 +23,13 @@ Our Guides / Tools must fulfill certain criteria before we publish them.
 1. Libraries must offer an ES module version
 
 **Note**: <a id="bare-specifiers"></a>We currently have ONE exception to this rule and that is 'bare modules'.
-This is such a powerful and widely-used pattern in the current JavaScript ecosystem, that if you don't use it you basically need to implement everything yourself.
+This is such a powerful and widely-used pattern in the current JavaScript ecosystem, that if you don't use it you need to implement everything yourself.
 We want to help you build your apps as easily and efficiently as possible, so for now we've adopted this practice as our only exception to the above rules.
 The [import maps](https://github.com/WICG/import-maps) proposal aims to bring bare modules to the web browser. You can follow that repository to stay up to date.
+
+## Modern Web
+
+We follow many of the development practices defined by [Modern Web](http://modern-web.dev/), our sister project. We recommend taking a look at their guides and documentation as well.
 
 ## Workflows
 
@@ -34,11 +38,11 @@ You are encouraged to freely switch between them depending on what you are worki
 
 ### Development Workflow
 
-The ideal development environment uses no tools, just an up-to-date browser and a simple HTTP server.
+The ideal development environment uses no tools, just an up-to-date browser, and a simple HTTP server.
 
 <inline-notification type="warning">
 
-Unfortunately we are not fully there yet, because of the [bare modules exception](#bare-specifiers) you will still need to have a server that at least supports them.
+Unfortunately, we are not fully there yet, because of the [bare modules exception](#bare-specifiers) you will still need to have a server that at least supports them.
 We recommend [Web Dev Server](https://modern-web.dev/docs/dev-server/overview/) as it does exactly this.
 
 </inline-notification>
@@ -55,7 +59,7 @@ Why would you choose this:
 ### Bundling Workflow
 
 Chances are that the web components you're building will need to run in more than just the latest browser.
-In these cases it's time to open your toolbox and make sure everything works in all supported browsers.
+In these cases, it's time to open your toolbox and make sure everything works in all supported browsers.
 
 When would you choose this workflow:
 
