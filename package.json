@@ -16,7 +16,7 @@
     "lint:versions": "node ./scripts/lint-versions.js",
     "postinstall": "npm run build",
     "publish": "lerna publish --message 'chore: release new versions'",
-    "site:build": "rocket build",
+    "site:build": "rocket build && lerna run site:build",
     "start": "rocket start",
     "start:build": "web-dev-server --root-dir _site --open",
     "test": "yarn test:browser && yarn test:node",
