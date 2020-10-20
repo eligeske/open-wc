@@ -6,8 +6,8 @@ description: 'Learn to test and debug your web component with open-wc tools so y
 tags: [webcomponents, javascript, testing, karma]
 date: 2019-05-09
 canonical_url: https://open-wc.org/blog/testing-workflow-for-web-components/
-cover_image: /blog/testing-workflow-for-web-components/images/blog-header.png
-socialMediaImage: /blog/testing-workflow-for-web-components/images/social-media-image.png
+cover_image: /blog/testing-workflow-for-web-components/images/blog-header.jpg
+socialMediaImage: /blog/testing-workflow-for-web-components/images/social-media-image.jpg
 ---
 
 Whenever you ship something to be used by others, you take on a responsibility to deliver safe and stable code. One way to address this is by testing your code.
