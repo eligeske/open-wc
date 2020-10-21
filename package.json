@@ -16,7 +16,7 @@
     "lint:versions": "node ./scripts/lint-versions.js",
     "postinstall": "npm run build",
     "publish": "lerna publish --message 'chore: release new versions'",
-    "site:build": "rocket build && lerna run site:build",
+    "site:build": "lerna run site:build && rocket build",
     "start": "rocket start",
     "start:build": "web-dev-server --root-dir _site --open",
     "test": "yarn test:browser && yarn test:node",
@@ -31,7 +31,7 @@
     "update-dependency": "node scripts/update-dependency.js"
   },
   "dependencies": {
-    "@d4kmor/cli": "^0.5.4",
+    "@d4kmor/cli": "^0.5.5",
     "@d4kmor/launch": "^0.4.9",
     "@d4kmor/search": "^0.1.2"
   },
